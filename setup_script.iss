@@ -1,7 +1,7 @@
 [Setup]
 AppId={{47B10700-5CC0-4AD3-8EE1-E84C1885C05F}
 AppName=Remember0416
-AppVersion=0.1
+AppVersion=0.2
 AppPublisher=REGENTAG
 AppPublisherURL=https://github.com/Regentag/Remember0416
 AppSupportURL=https://github.com/Regentag/Remember0416
@@ -17,7 +17,7 @@ AllowUNCPath=False
 ShowLanguageDialog=no
 AppContact=https://github.com/Regentag/Remember0416/issues
 UninstallDisplaySize=42
-UninstallDisplayIcon={app}\0416.exe
+UninstallDisplayIcon={app}\remember0416.exe
 DisableReadyPage=True
 DisableReadyMemo=True
 DisableFinishedPage=True
@@ -32,19 +32,19 @@ ArchitecturesInstallIn64BitMode=x64
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-Source: "0416_32.exe"; DestDir: "{app}"; DestName: "0416.exe"; Flags: ignoreversion 32bit
-Source: "0416_64.exe"; DestDir: "{app}"; DestName: "0416.exe"; Flags: ignoreversion 64bit
+Source: "0416_32.exe"; DestDir: "{app}"; DestName: "remember0416.exe"; Flags: ignoreversion 32bit
+Source: "0416_64.exe"; DestDir: "{app}"; DestName: "remember0416.exe"; Flags: ignoreversion 64bit
 Source: "ribbon.ico"; DestDir: "{app}"; DestName: "ribbon.ico"; Flags: ignoreversion
 
 [Run]
-Filename: "{app}\0416.exe"; WorkingDir: "{app}"; Flags: nowait postinstall; Description: "Run after installation"
+Filename: "{app}\remember0416.exe"; WorkingDir: "{app}"; Flags: nowait postinstall; Description: "Run after installation"
 
 [Registry]
 ;current user only
-Root: HKCU; Subkey: "Software\Microsoft\Windows\CurrentVersion\Run"; ValueType: string; ValueName: "Remember0416"; ValueData: "{app}\0416.exe";
+Root: HKCU; Subkey: "Software\Microsoft\Windows\CurrentVersion\Run"; ValueType: string; ValueName: "Remember0416"; ValueData: "{app}\remember0416.exe";
 
 [UninstallRun]
-Filename: "taskkill.exe"; Parameters: "/F /IM 0416.exe"; WorkingDir: "{app}"; Flags: waituntilterminated skipifdoesntexist runhidden
+Filename: "taskkill.exe"; Parameters: "/F /IM remember0416.exe"; WorkingDir: "{app}"; Flags: waituntilterminated skipifdoesntexist runhidden
 
 [Code]
 function GetProgramFiles(Param: string): string;

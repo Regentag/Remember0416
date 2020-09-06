@@ -40,7 +40,7 @@ func onReady() {
 
 	click := systray.AddLeftClickMenuItem()
 
-	mInfo := systray.AddMenuItem("세월호 침몰 사고 정보", "")
+	mInfo := systray.AddMenuItem("세월호 침몰 사고 정보(나무위키)", "")
 	mAbout := systray.AddMenuItem("프로그램 정보", "")
 	systray.AddSeparator()
 	mQuit := systray.AddMenuItem("종료", "")
@@ -76,7 +76,7 @@ func showToast() {
 		Message: msg,
 		Icon:    iconPath,
 		Actions: []toast.Action{
-			{Type: "protocol", Label: "사고 정보 보기", Arguments: URL},
+			//{Type: "protocol", Label: "사고 정보 보기", Arguments: URL},
 			{Type: "system", Label: "닫기", Arguments: "dismiss"},
 		},
 		Duration: toast.Long,
@@ -108,11 +108,11 @@ func openBrowser(url string) {
 }
 
 // 사고일로부터의 경과일수를 계산하여 반환.
-// 2014. 4. 16. 08:50분을 기준으로 합니다.
+// 2014. 4. 16. 00:00을 기준으로 합니다. (나무위키의 일자 계산과 일치)
 func dayAfter() int {
 	now := time.Now()
 	format := "2006-01-02 15:04:05"
-	then, _ := time.Parse(format, "2014-04-16 08:50:00")
+	then, _ := time.Parse(format, "2014-04-16 00:00:00")
 
 	diff := now.Sub(then)
 
