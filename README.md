@@ -34,22 +34,10 @@ MacOS용 앱인 [min-uuu/For_0416](https://github.com/min-uuu/For_0416)에 영�
    * [버전 0.2 바로가기](https://github.com/Regentag/Remember0416/releases/tag/0%2C2)
  2. 설치파일을 실행하면 자동으로 시작 프로그램에 등록됩니다.
 
-### ___!!주의!! 설치파일 실행 시 Windows Defender 또는 백신에서 경고가 뜰 수 있습니다.___
-
-이 프로그램은 악성코드인 것이 아닙니다.
-
-단지 프로그램이 인증서로 서명되지 않았기 때문에 발생하는 경고 메시지로, 실제로 보안 문제가 있는것은 아닙니다.
-
-
-1. Windows Defender SmartScreen에서 실행을 차단할 경우 '추가정보'를 클릭합니다.
-
-![추가정보](03_defender.png)
-
-2. '실행' 버튼이 나타나면 클릭합니다.
-
-![실행](04_defender.png)
-
-※ 백신에서도 차단할 경우 해제 해 주어야 설치됩니다.
+## 보안 관련
+ * 설치 시 Microsoft Defender SmartScreen 또는 백신 소프트웨어의 경고가 발생할 수 있습니다.
+ * 설치파일/실행파일이 유료 EV인증서로 서명되지 않았기 때문입니다.
+ * "[MS Defender SmartScreen은 인디 개발자를 해치고 있어요](https://getimageview.net/2020/06/02/microsoft-defender-smartscreen-is-hurting-independent-developers/)" 문서를 참조하시기 바랍니다. ([한국어 요약](https://news.hada.io/topic?id=2199))
 
 
 # 원작자의 표시

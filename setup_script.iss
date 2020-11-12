@@ -1,12 +1,12 @@
 [Setup]
 AppId={{47B10700-5CC0-4AD3-8EE1-E84C1885C05F}
 AppName=Remember0416
-AppVersion=0.2
+AppVersion=0.2a
 AppPublisher=REGENTAG
 AppPublisherURL=https://github.com/Regentag/Remember0416
 AppSupportURL=https://github.com/Regentag/Remember0416
 AppUpdatesURL=https://github.com/Regentag/Remember0416/releases
-DefaultDirName={code:GetProgramFiles}\Remember0416
+DefaultDirName={pf64}\Remember0416
 DefaultGroupName=Remember0416
 DisableProgramGroupPage=yes
 OutputBaseFilename=0416setup
@@ -27,13 +27,13 @@ UsePreviousLanguage=False
 SetupIconFile=ribbon.ico
 UninstallDisplayName=Remember0416
 ArchitecturesInstallIn64BitMode=x64
+ArchitecturesAllowed=x64
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-Source: "0416_32.exe"; DestDir: "{app}"; DestName: "remember0416.exe"; Flags: ignoreversion 32bit
-Source: "0416_64.exe"; DestDir: "{app}"; DestName: "remember0416.exe"; Flags: ignoreversion 64bit
+Source: "0416.exe"; DestDir: "{app}"; DestName: "remember0416.exe"; Flags: ignoreversion
 Source: "ribbon.ico"; DestDir: "{app}"; DestName: "ribbon.ico"; Flags: ignoreversion
 
 [Run]
@@ -45,10 +45,3 @@ Root: HKCU; Subkey: "Software\Microsoft\Windows\CurrentVersion\Run"; ValueType: 
 
 [UninstallRun]
 Filename: "taskkill.exe"; Parameters: "/F /IM remember0416.exe"; WorkingDir: "{app}"; Flags: waituntilterminated skipifdoesntexist runhidden
-
-[Code]
-function GetProgramFiles(Param: string): string;
-begin
-  if IsWin64 then Result := ExpandConstant('{pf64}')
-    else Result := ExpandConstant('{pf32}')
-end;
