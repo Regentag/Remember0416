@@ -31,7 +31,6 @@ MacOS용 앱인 [min-uuu/For_0416](https://github.com/min-uuu/For_0416)에 영�
 
 ## 설치방법
  1. 오른쪽의 'Release' 링크에서 가장 최신 버전을 다운받아 주세요.
-   * [버전 0.2 바로가기](https://github.com/Regentag/Remember0416/releases/tag/0%2C2)
  2. 설치파일을 실행하면 자동으로 시작 프로그램에 등록됩니다.
 
 ## 보안 관련
