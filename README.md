@@ -1,9 +1,7 @@
 # Remember0416
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FRegentag%2FRemember0416&count_bg=%23BFBD0B&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=%EB%B0%A9%EB%AC%B8%EC%9E%90&edge_flat=false)](https://hits.seeyoufarm.com)
-
 > 우리가 기억하는 한<br>
-진실은 절대 침몰하지 않습니다.
+그들은 절대 침몰하지 않습니다.
 
 <p align="center">
 <img width="200px" src="ribbon.png"/>
@@ -37,10 +35,5 @@ MacOS용 앱인 [min-uuu/For_0416](https://github.com/min-uuu/For_0416)에 영�
  * 설치 시 Microsoft Defender SmartScreen 또는 백신 소프트웨어의 경고가 발생할 수 있습니다.
  * 설치파일/실행파일이 유료 EV인증서로 서명되지 않았기 때문입니다.
  * "[MS Defender SmartScreen은 인디 개발자를 해치고 있어요](https://getimageview.net/2020/06/02/microsoft-defender-smartscreen-is-hurting-independent-developers/)" 문서를 참조하시기 바랍니다. ([한국어 요약](https://news.hada.io/topic?id=2199))
-
-
-# 원작자의 표시
-  * systray - [getlantern/systray](https://github.com/getlantern/systray)
-  * toast - [go-toast/toast](https://github.com/go-toast/toast)
 
 끝.

@@ -1,0 +1,21 @@
+[package]
+name = "remember0416"
+version = "0.3.0"
+authors = ["Regentag <yeongtaek.ham@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = "0.4"
+windows = "0.8"
+bindings = { path = "./bindings" }
+trayicon = "0.1.1"
+
+[build-dependencies]
+winres = "0.1"
+
+[package.metadata.winres]
+OriginalFilename = "Remember0416.exe"
+LegalCopyright = "(C) 2021 Regentag."
+FileDescription = "Remember 0416"
+ProductName = "Remember 0416"
+ProductVersion = "0.3"

@@ -1,7 +1,7 @@
 [Setup]
 AppId={{47B10700-5CC0-4AD3-8EE1-E84C1885C05F}
 AppName=Remember0416
-AppVersion=0.2a
+AppVersion=0.3
 AppPublisher=REGENTAG
 AppPublisherURL=https://github.com/Regentag/Remember0416
 AppSupportURL=https://github.com/Regentag/Remember0416
@@ -33,7 +33,7 @@ ArchitecturesAllowed=x64
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-Source: "0416.exe"; DestDir: "{app}"; DestName: "remember0416.exe"; Flags: ignoreversion
+Source: "remember0416.exe"; DestDir: "{app}"; DestName: "remember0416.exe"; Flags: ignoreversion
 Source: "ribbon.ico"; DestDir: "{app}"; DestName: "ribbon.ico"; Flags: ignoreversion
 
 [Run]
