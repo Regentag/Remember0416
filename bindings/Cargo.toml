@@ -5,7 +5,7 @@ authors = ["Regentag <yeongtaek.ham@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-windows = "0.8"
+windows = "0.9.1"
 
 [build-dependencies]
-windows = "0.8"
+windows = "0.9.1"

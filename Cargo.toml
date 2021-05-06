@@ -6,9 +6,9 @@ edition = "2018"
 
 [dependencies]
 chrono = "0.4"
-windows = "0.8"
+windows = "0.9.1"
 bindings = { path = "./bindings" }
-trayicon = "0.1.1"
+trayicon = { git="https://github.com/Regentag/trayicon-rs" }
 
 [build-dependencies]
 winres = "0.1"

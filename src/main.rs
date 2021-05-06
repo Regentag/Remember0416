@@ -24,7 +24,7 @@ fn main() -> windows::Result<()> {
             self,
             HWND, MSG,
             WM_QUIT,
-            PeekMessage_wRemoveMsg }
+            PEEK_MESSAGE_REMOVE_TYPE }
     };
 
     // Create tray icon
@@ -38,7 +38,7 @@ fn main() -> windows::Result<()> {
     'event: loop{
         // see: https://blog.naver.com/valdo4472/120045875471
         unsafe {
-            while WindowsAndMessaging::PeekMessageA(&mut msg, h_wnd, 0, 0, PeekMessage_wRemoveMsg::PM_REMOVE).as_bool() {
+            while WindowsAndMessaging::PeekMessageA(&mut msg, h_wnd, 0, 0, PEEK_MESSAGE_REMOVE_TYPE::PM_REMOVE).as_bool() {
                 if msg.message == WM_QUIT {
                     break 'event;
                 } else {
